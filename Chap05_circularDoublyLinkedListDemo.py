@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from circularDoublyLinkedList import *
+from Chap05_circularDoublyLinkedList import *
 
 list = CircularDoublyLinkedList()
 list.append(30); list.insert(0, 20)
