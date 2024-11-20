@@ -12,3 +12,10 @@ def insertionSort(A):
             A[loc + 1] = A[loc]
             loc -= 1
         A[loc + 1] = newItem
+        print(f"Step {i}: {A}")  # 단계별 배열 출력
+
+# 예제 실행
+array = [3, 31, 48, 73, 8, 11, 20, 29, 65, 15]
+print("Initial array:", array)
+insertionSort(array)
+print("Sorted array:", array)

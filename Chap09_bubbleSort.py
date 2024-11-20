@@ -9,3 +9,10 @@ def bubbleSort(A):
         for i in range(numElements - 1):
             if A[i] > A[i+1]:
                 A[i], A[i+1] = A[i+1], A[i]
+        print(f"Step {len(A) - numElements + 1}: {A}")  # 단계별 배열 출력
+
+# 예제 실행
+array = [3, 31, 48, 73, 8, 11, 20, 29, 65, 15]
+print("Initial array:", array)
+bubbleSort(array)
+print("Sorted array:", array)

@@ -10,6 +10,7 @@ def mergeSort(A, p: int, r: int):
         mergeSort(A, p, q)
         mergeSort(A, q+1, r)
         merge(A, p, q, r)
+        
 
 def merge(A, p: int, q: int, r: int):
     i = p; j = q + 1; t = 0
@@ -26,3 +27,10 @@ def merge(A, p: int, q: int, r: int):
     i = p; t = 0
     while i <= r:
         A[i] = tmp[t]; t += 1; i += 1
+
+
+# 예제 실행
+array = [3, 8, 31, 65, 73, 11, 15, 20, 29, 48]
+print("Initial array:", array)
+mergeSort(array, 0, len(array) - 1)
+print("Sorted array:", array)

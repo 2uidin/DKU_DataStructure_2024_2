@@ -19,3 +19,9 @@ def partition(A, p: int, r: int) -> int:
             A[i], A[j] = A[j], A[i] # 교환
     A[i+1], A[r] = A[r], A[i+1]     # 기준 원소와 2구역 첫 원소 교환
     return i+1
+
+# 예제 실행
+array = [31, 8, 48, 73, 11, 3, 20, 29, 65, 15]
+print("Initial array:", array)
+quickSort(array, 0, len(array) - 1)
+print("Sorted array:", array)

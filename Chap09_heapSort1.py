@@ -12,3 +12,9 @@ def heapSort(A):
     h.buildHeap()
     for i in range(len(B)-1, -1, -1):
         A[i] = h.deleteMax()
+
+# 예제 실행
+array = [4, 2, 8, 7, 3, 3, 5, 1, 9]
+print("Initial array:", array)
+heapSort(array)
+print("Sorted array:", array)
