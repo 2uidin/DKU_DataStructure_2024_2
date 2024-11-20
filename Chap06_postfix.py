@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from listStack import *
+from Chap06_listStack import *
 
 def evaluate(p):
     s = ListStack()

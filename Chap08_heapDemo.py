@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from heap import *
+from Chap08_heap import *
 
 h1 = Heap([1, 11, 9, 2, 3])
 h1.buildHeap()

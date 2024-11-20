@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from listNode import ListNode
+from Chap05_listNode import ListNode
 
 class LinkedListBasic:
     def __init__(self):

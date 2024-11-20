@@ -1,12 +1,12 @@
 ####################
-# Chap10_binarySearchTreeDemo.py
+# Chap11_AVLTreeDemo.py
 # 작성일: 2024-11-20
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from binarySearchTree import *
+from Chap11_AVLTree import *
 
-bst1 = BinarySearchTree()
+bst1 = AVLTree()
 bst1.insert(10)
 bst1.insert(20)
 bst1.insert(5)

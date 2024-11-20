@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from linkedListBasic import *
+from Chap05_linkedListBasic import *
 
 list = LinkedListBasic()
 list.append(30); list.insert(0,20)

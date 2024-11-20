@@ -5,7 +5,7 @@
 ####################
 
 import math
-from insertionSort import insertionSort
+from Chap09_insertionSort import insertionSort
 
 def bucketSort(A):
     n = len(A)

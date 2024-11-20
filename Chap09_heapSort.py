@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from heap import *
+from Chap08_heap import *
 
 def heapSort(A):
     buildHeap(A)

@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from listQueue import *
+from Chap07_listQueue import *
 
 q1 = ListQueue()
 q1.enqueue("Mon")

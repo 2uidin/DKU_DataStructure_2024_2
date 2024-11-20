@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from circularLinkedList import *
+from Chap05_circularLinkedList import *
 
 class LinkedQueue:
     def __init__(self):

@@ -4,8 +4,8 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from listStack import *
-from listQueue import *
+from Chap06_listStack import *
+from Chap07_listQueue import *
 
 def isPalindrome(A) -> bool:
     s = ListStack(); q = ListQueue()

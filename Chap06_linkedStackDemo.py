@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from linkedStack import LinkedStack
+from Chap06_linkedStack import LinkedStack
 
 st1 = LinkedStack()
 st1.push(100)

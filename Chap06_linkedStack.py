@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from linkedListBasic import LinkedListBasic
+from Chap05_linkedListBasic import LinkedListBasic
 
 class LinkedStack:
     def __init__(self):

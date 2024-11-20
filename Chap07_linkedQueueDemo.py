@@ -4,7 +4,7 @@
 # 소프트웨어학과 32192406 심의진
 ####################
 
-from linkedQueue import *
+from Chap07_linkedQueue import *
 
 q1 = LinkedQueue()
 q1.enqueue("Mon")
