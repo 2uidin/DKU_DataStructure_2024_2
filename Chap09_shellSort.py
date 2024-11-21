@@ -9,6 +9,7 @@ def shellSort(A):   # A[0...n-1]: 정렬할 리스트
     for h in H: # H = [h0, h1, ..., 1]: 갭 수열
         for k in range(h):
             stepInsertSort(A, k, h)
+            print(f"After sorting with gap {h} starting at index {k}: {A}")  # 정렬 후 상태 출력
 
 def stepInsertSort(A, k: int, h: int):  # A[k, k+h, K+2h, ...]을 정렬한다
     for i in range(k + h, len(A), h):
@@ -28,3 +29,9 @@ def gapSequence(n: int) -> list:    # 갭 수열 만들기. 다양한 선택이 
         H.append(gap)
     H.reverse()
     return H
+
+# 예제 실행
+array = [15, 31, 65, 73, 8, 66, 11, 3, 20, 48, 29, 1, 33, 25, 4]
+print("Initial array:", array)
+shellSort(array)
+print("Sorted array:", array)
