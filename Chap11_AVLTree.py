@@ -48,7 +48,7 @@ class AVLTree:
                 tNode = self.__balanceAVL(tNode, type)
         else:                           # branch right
             tNode.right = self.__insertItem(tNode.right, x)
-            tNode.height = 1+ max(tNode.right.right, tNode.left.height)
+            tNode.height = 1 + max(tNode.right.height, tNode.left.height)
             type = self.__needBalance(tNode)
             if (type != self.No_NEED):
                 tNode = self.__balanceAVL(tNode, type)
@@ -58,7 +58,7 @@ class AVLTree:
     def delete(self, x):
         self.__root = self.__deleteItem(self.__root, x)
 
-    def __deletItem(self, tNode: AVLNode, x) -> AVLNode:
+    def __deleteItem(self, tNode: AVLNode, x) -> AVLNode:
         if (tNode == self.NIL):
             return self.NIL         # Item not found!
         else:
@@ -79,10 +79,6 @@ class AVLTree:
             return tNode
     
     def __deleteNode(self, tNode: AVLNode) -> AVLNode:
-        # 3가지 case
-        #   1. tNode이 리프 노드
-        #   2. tNode이 자식이 하나만 있음
-        #   3. tNode이 자식이 둘 있음
         if tNode.left == self.NIL and tNode.right == self.NIL:  # case 1(자식이 없음)
             return self.NIL
         elif tNode.left == self.NIL:    # case 2(오른자식뿐)
@@ -101,7 +97,6 @@ class AVLTree:
         
     def __deleteMinItem(self, tNode: AVLNode) -> tuple:
         if tNode.left == self.NIL:
-            # found min at tNode
             return (tNode.item, tNode.right)
         else:   # keep branching left, then backtrack
             (rtnItem, rtnNode) = self.__deleteMinItem(tNode.left)
@@ -133,7 +128,7 @@ class AVLTree:
     def __leftRotate(self, t: AVLNode) -> AVLNode:
         RChild = t.right
         if RChild == self.NIL:
-            print(t.item, "'s RChild should't be NIL!")
+            print(t.item, "'s RChild shouldn't be NIL!")
         RLChild = RChild.left
         RChild.left = t
         t.right = RLChild
@@ -145,9 +140,9 @@ class AVLTree:
     def __rightRotate(self, t: AVLNode) -> AVLNode:
         LChild = t.left
         if LChild == self.NIL:
-            print(t.item, "'s LChild should't be NIL!")
+            print(t.item, "'s LChild shouldn't be NIL!")
         LRChild = LChild.right
-        LChild.left = t
+        LChild.right = t
         t.left = LRChild
         t.height = 1 + max(t.left.height, t.right.height)
         LChild.height = 1 + max(LChild.left.height, LChild.right.height)
@@ -169,6 +164,17 @@ class AVLTree:
             type = self.No_NEED
         return type
     
+    def printTreeStructure(self):
+        def _printTree(node, depth=0):
+            if node is not None and node != self.NIL:
+                _printTree(node.right, depth + 1)  # 오른쪽 자식 먼저
+                print("     " * depth + str(node.item))  # 현재 노드
+                _printTree(node.left, depth + 1)  # 왼쪽 자식
+
+        print("\nAVL 트리 구조:")
+        _printTree(self.__root)
+        print("----------")
+        
     # 기타
     def isEmpty(self) -> bool:
         return self.__root == self.NIL

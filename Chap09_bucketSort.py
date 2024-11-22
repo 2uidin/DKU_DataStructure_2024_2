@@ -15,4 +15,11 @@ def bucketSort(A):
     A.clear()
     for i in range(n):
         insertionSort(B[i])
+        print(f"Bucket {i}: {B[i]}")
         A.extend(B[i])
+        
+# 예제 실행
+array = [.38, .94, .48, .73, .99, .43, .55, .15, .85, .84, .81, .71, .17, .10, .02]
+print("Initial array:", array)
+bucketSort(array)
+print("Sorted array:", array)
