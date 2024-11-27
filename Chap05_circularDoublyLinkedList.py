@@ -154,7 +154,7 @@ class CircularDoublyLinkedListIterator:
     def __init__(self, alist):
         self.__head = alist.getNode(-1)         # 더미헤드
         self.iterPosition = self.__head.next    # 0번 노드
-    def __next(self):
+    def __next__(self):
         if self.iterPosition == self.__head:    # 순환 끝
             raise StopIteration
         else:   # 현재 원소를 리턴하면서 다음 원소로 이동

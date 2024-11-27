@@ -34,6 +34,16 @@ class Heap:
         else:
             return None
         
+    # def deleteMax(self):
+    #     # heap is in self.__A[0...len(self.__A)-1]
+    #     if self.isEmpty():
+    #         return None  # 힙이 비어있을 때 None을 반환
+    #     max_value = self.__A[0]
+    #     # 맨 마지막 원소를 루트로 이동
+    #     self.__A[0] = self.__A.pop()    
+    #     self.__percolateDown(0)
+    #     return max_value
+        
     # 스며내리기
     def __percolateDown(self, i: int):
         # Percolate down w/ self.__[A] as the root

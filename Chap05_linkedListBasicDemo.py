@@ -1,5 +1,5 @@
 ####################
-# Chap05_linkedListListBasicDemo.py
+# Chap05_linkedListBasicDemo.py
 # 작성일: 2024-11-08
 # 소프트웨어학과 32192406 심의진
 ####################

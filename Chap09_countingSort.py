@@ -20,5 +20,5 @@ def countingSort(A):
 # 예제 실행
 array = [3, 2, 1, 4, 0, 2, 5, 1, 3, 4, 2, 0, 5, 1, 3]
 print("Initial array:", array)
-countingSort(array)
+array = countingSort(array)
 print("Sorted array:", array)

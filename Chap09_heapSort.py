@@ -28,3 +28,9 @@ def percolateDown(A, k: int, end: int):
         if A[k] < A[child]:
             A[k], A[child] = A[child], A[k]
             percolateDown(A, child, end)
+            
+# 예제 실행
+array = [4, 2, 8, 7, 3, 3, 5, 1, 9]
+print("Initial array:", array)
+heapSort(array)
+print("Sorted array:", array)

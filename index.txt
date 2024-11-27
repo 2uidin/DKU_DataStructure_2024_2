@@ -3,7 +3,7 @@
 	(리스트 노드 생성 클래스)
 # Chap05_linkedListBasic.py
 	(연결 리스트 클래스)
-# Chap05_linkedListListBasicDemo.py
+# Chap05_linkedListBasicDemo.py
 	(연결 리스트 예제)
 
 # Chap05_circularLinkedList.py
@@ -67,9 +67,9 @@
 	(퀵 정렬 클래스)
 ----------------------------------------
 # Chap09_heapSort1.py
-	(힙 클래스를 사용하는 힙 정렬)
+	(힙 클래스를 사용하는 힙 정렬 클래스)
 # Chap09_heapSort.py
-	(내부 정렬을 사용하는 힙 정렬)
+	(내부 정렬을 사용하는 힙 정렬 클래스)
 ----------------------------------------
 # Chap09_shellSort.py
 	(셸 정렬 클래스)
@@ -81,14 +81,10 @@
 	(버킷 정렬 클래스)
 
 [Chap10]
-# Chap10_binarySearchTree.py
-	(이진 검색 트리 클래스)
 # Chap10_binarySearchTreeDemo.py
 	(이진 검색 트리 예제)
 
 [Chap11]
-# Chap11_AVLTree.py
-	(AVL 트리 클래스)
 # Chap11_AVLTreeDemo.py
 	(AVL 트리 예제)
 

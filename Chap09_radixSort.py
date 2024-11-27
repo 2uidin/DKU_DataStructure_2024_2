@@ -18,7 +18,7 @@ def radixSort(A):
         A.clear()
         for j in range(10):
             A.extend(bucket[j])
-            print(f"Bucket {j}: {bucket[j]}")
+            # print(f"Bucket {j}: {bucket[j]}")
             bucket[j].clear()
         print(f"Array after sorting by {i + 1} digit: {A}\n")
 
